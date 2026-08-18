@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Scope & Hoisting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>JavaScript Scope & Hoisting</h1>
+
+    <!-- Scope -->
+    <h2>1. Scope</h2>
+
+    <div class="definition">
+        <b>Scope:</b> Scope defines where a variable can be accessed in
+        JavaScript.
+    </div>
+
+    <div class="demo">
+        <h3>Example 1: Global Scope</h3>
+
+        <pre>
+let city = "Hyderabad";
+
+function showCity() {
+    console.log(city);
+}
+
+showCity();
+console.log(city);
+        </pre>
+
+        <button class="run">Run Code</button>
+        <button class="copy">Copy Code</button>
+
+        <div class="output"></div>
+    </div>
+
+
+    <div class="demo">
+        <h3>Example 2: Function Scope</h3>
+
+        <pre>
+function test() {
+    var message = "Hello JavaScript";
+    console.log(message);
+}
+
+test();
+console.log(message);
+        </pre>
+
+        <button class="run">Run Code</button>
+        <button class="copy">Copy Code</button>
+
+        <div class="output"></div>
+    </div>
+
+
+    <div class="demo">
+        <h3>Example 3: Block Scope</h3>
+
+        <pre>
+if (true) {
+    let age = 22;
+    console.log(age);
+}
+
+console.log(age);
+        </pre>
+
+        <button class="run">Run Code</button>
+        <button class="copy">Copy Code</button>
+
+        <div class="output"></div>
+    </div>
+
+
+    <div class="demo">
+        <h3>Example 4: var vs let</h3>
+
+        <pre>
+if (true) {
+    var course = "JavaScript";
+    let duration = "3 Months";
+}
+
+console.log(course);
+console.log(duration);
+        </pre>
+
+        <button class="run">Run Code</button>
+        <button class="copy">Copy Code</button>
+
+        <div class="output"></div>
+    </div>
+
+
+    <!-- Hoisting -->
+    <h2>2. Hoisting</h2>
+
+    <div class="definition">
+        <b>Hoisting:</b> JavaScript processes declarations before executing
+        the code.
+    </div>
+
+
+    <div class="demo">
+        <h3>Example 1: var Hoisting</h3>
+
+        <pre>
+console.log(number);
+
+var number = 100;
+
+console.log(number);
+        </pre>
+
+        <button class="run">Run Code</button>
+        <button class="copy">Copy Code</button>
+
+        <div class="output"></div>
+    </div>
+
+
+    <div class="demo">
+        <h3>Example 2: let Hoisting</h3>
+
+        <pre>
+console.log(name);
+
+let name = "Devadasu";
+        </pre>
+
+        <button class="run">Run Code</button>
+        <button class="copy">Copy Code</button>
+
+        <div class="output"></div>
+    </div>
+
+
+    <div class="demo">
+        <h3>Example 3: Function Hoisting</h3>
+
+        <pre>
+welcome();
+
+function welcome() {
+    console.log("Welcome!");
+}
+        </pre>
+
+        <button class="run">Run Code</button>
+        <button class="copy">Copy Code</button>
+
+        <div class="output"></div>
+    </div>
+
+
+    <div class="demo">
+        <h3>Example 4: Function Expression</h3>
+
+        <pre>
+hello();
+
+var hello = function () {
+    console.log("Hello!");
+};
+        </pre>
+
+        <button class="run">Run Code</button>
+        <button class="copy">Copy Code</button>
+
+        <div class="output"></div>
+    </div>
+
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
