@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- FORM -->
+    <form id="profileForm">
+      <h2>Enter Details</h2>
+
+      <input type="text" id="nameInput" placeholder="Name">
+      <input type="text" id="roleInput" placeholder="Role (e.g. Web Developer)">
+      <input type="email" id="emailInput" placeholder="Email">
+      <input type="text" id="cityInput" placeholder="City">
+      <textarea id="bioInput" placeholder="Short bio"></textarea>
+
+      <button type="button" id="resetBtn">Reset</button>
+    </form>
+
+    <!-- CARD -->
+    <div class="card" id="card">
+      <div class="avatar" id="avatar">?</div>
+      <h3 id="cardName">Your Name</h3>
+      <p class="role" id="cardRole">Your Role</p>
+      <p id="cardEmail">your@email.com</p>
+      <p id="cardCity">Your City</p>
+      <p class="bio" id="cardBio">Your bio will appear here.</p>
+    </div>
+
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
